@@ -1,7 +1,7 @@
 /*
 *		William Orozco, 13386
-*		Dulce Chacon, 13
-*		Luis Gomez, 13
+*		Dulce Chacon, 13463
+*		Luis Gomez, 13135
 *		Programa para contar diferentes tipos de palabras en un archivo de texto. 
 *		
 *		HOJA DE TRABAJO 8
@@ -79,7 +79,7 @@ public class SelectSet implements WordSet {
     
     /*Método para obtener palabras, retornando segun el tipo de estructura*/
     public Word get(Word word) {
-		
+		//llave=0;
         if (tipoSet == 1) {
             palabra = estructura1.get(word); 
         } else if (tipoSet == 2) { 
@@ -87,20 +87,18 @@ public class SelectSet implements WordSet {
         } else if (tipoSet == 3) {
             palabra=(Word)estructura3.find(word);
         } else if (tipoSet == 4) {
-            
             if (estructura4.contains(word)){
 				palabra=word;
-                                palabra=(Word)palabra;
-                                
+                //palabra=(Word)estructura4.get(llave);
+				//llave++;
             }
         } else if (tipoSet == 5) {
             if (estructura5.containsValue(word)){
-				
-				palabra=(Word)estructura5.get(llave);
-				
+				palabra=word;
+				//palabra=(Word)estructura5.get(llave);
+				//llave++;
             }
         }
-        
         return palabra;
     }
 }

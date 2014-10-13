@@ -1,7 +1,7 @@
 /*
 *		William Orozco, 13386
-*		Dulce Chacon, 13
-*		Luis Gomez, 13
+*		Dulce Chacon, 13463
+*		Luis Gomez, 13135
 *		Programa para contar diferentes tipos de palabras en un archivo de texto. 
 *		HOJA DE TRABAJO 8
 *

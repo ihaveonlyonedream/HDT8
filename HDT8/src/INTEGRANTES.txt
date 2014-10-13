@@ -1,11 +1,13 @@
 Integrantes:
 
-William Orozco, 13386
-Dulce Chacon, 13
-Luis Gomez, 13135
+
+		William Orozco, 13386
+		Dulce Chacon, 13463
+		Luis Gomez, 13135
 
 
 EL METODO MAS RAPIDO PARA ANALIZAR EL TEXTO ES USANDO UN RED BLACK TREE
-Se tarda menos tiempo. Segun la consola, se tarda 187 milisegundos en cargar las palabras (se tarda mas que los demas), pero al analizar, se tarda solo 31 milisegundos, mucho menos que los demas metodos. 
+A pesar de que segun el profiler el splayTree es mas rapido por milesimas el red black tree utiliza menor espacio en memoria.
+Segun la consola, se tarda 187 milisegundos en cargar las palabras (se tarda mas que los demas), pero al analizar, se tarda solo 31 milisegundos, mucho menos que los demas metodos. 
 
 El menos eficiente es el de  TreeMap, porque se tarda solo 109 milisegundos en cargar todo, pero se tarda mas de 8 segundos en analizar todo el texto. 
