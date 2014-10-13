@@ -1,10 +1,14 @@
+//package HT8;
 /*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7
-Autor: Eduardo Castellanos
-
-Descripción: SimpleSet ejemplo con ArrayList.
+*		William Orozco, 13386
+*		Dulce Chacon, 13
+*		Luis Gomez, 13
+*		Programa para contar diferentes tipos de palabras en un archivo de texto. 
+*		HOJA DE TRABAJO 8
+*
+*		Se uso codigo de referencia adjuntado con la hoja de trabajo
+*
+*		Descripciï¿½n: SimpleSet ejemplo con ArrayList.
 */
 import java.util.ArrayList;
 

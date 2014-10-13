@@ -1,10 +1,14 @@
+//package HT8;
 /*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7 
-Autor: Eduardo Castellanos
-
-Descripción: Word. Clase para almacenar las palabras junto con su tipo. 
+*		William Orozco, 13386
+*		Dulce Chacon, 13
+*		Luis Gomez, 13
+*		Programa para contar diferentes tipos de palabras en un archivo de texto. 
+*		HOJA DE TRABAJO 8
+*
+*		Se uso codigo de referencia adjuntado con la hoja de trabajo
+*
+*		Descripciï¿½n: Word. Clase para almacenar las palabras junto con su tipo. 
 */
 class Word implements Comparable<Word> {
 	private String word;
@@ -34,7 +38,7 @@ class Word implements Comparable<Word> {
 		return (obj instanceof Word && getWord().equals(((Word)obj).getWord()));
 	}
 	
-	// Métodos de acceso..
+	// Mï¿½todos de acceso..
 	public void setWord(String word)
 	{
 		this.word=word;

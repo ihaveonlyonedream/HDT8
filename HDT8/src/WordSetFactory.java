@@ -1,33 +1,37 @@
 /*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7 
-Autor: Eduardo Castellanos
-
-Descripci�n: WordSetFactory. Clase  utilizada para instanciar los diferentes tipos de sets. 
+*		William Orozco, 13386
+*		Dulce Chacon, 13
+*		Luis Gomez, 13
+*		Programa para contar diferentes tipos de palabras en un archivo de texto. 
+*		HOJA DE TRABAJO 8
+*
+*		Se uso codigo de referencia adjuntado con la hoja de trabajo
 */
+
+/*
+ *  WordSetFactory.java: factory que instancia el tipo de estructura de dato a usar
+ *  
+ *      Se uso codigo de ejemplo proporcionado. 
+ * 
+ */
+
+//package HT8;
+
 class WordSetFactory {
-	
-	// Metodo que genera un objeto que implementa WordSet
-	// parametro tipo: 1 = SimpleSet
-	//                         2 = implementado con Red black tree
-	//                         3 = implementado con Splay Tree
-	//                         4 = implementado con Hash Table
-	//                         5 = implementado con TreeMap (de Java Collection Framework)
-	
+	//Factory de WordSet. Manda a llamar a SelectSet, de acuerdo con el tipo de set que el usuario ingresa
 	public static WordSet generateSet(int tipo)
 	{
-	    if (tipo == 1)
-		    return new SimpleSet();
-		else
-		    // aqui se regresara el set empleando sus implementaciones:
-			// if tipo == 2 cree una instancia para un Wordset implementao con Red Black Tree
-			// if tipo == 3 cree una instancia para un Wordset implementado con Splay Tree
-			// if tipo == 4 cree una instancia para un Wordset implementado con Hash table
-			// if tipo == 5 cree una instancia para un Wordset implementado con TreeMap
-			
-			return new null; // modificarlo para que regrese la implementacion seleccionada
+	    if (tipo == 1){
+                return new SelectSet(1);}
+            else if (tipo == 2){
+                return new SelectSet(2);}
+            else if (tipo == 3){
+                return new SelectSet(3);}
+            else if (tipo == 4){
+                return new SelectSet(4);}
+            else if (tipo == 5){
+                return new SelectSet(5);}
+            else{
+            return null;}		
 	}
-	
-	
 }

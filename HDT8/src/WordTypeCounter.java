@@ -1,24 +1,28 @@
+//package HT8;
 /*
-UVG
-Algoritmos y Estructuras de Datos - 2011
-Hoja de trabajo 7
-Autor: Eduardo Castellanos
-
-Descripci�n: Programa principal. 
+*		William Orozco, 13386
+*		Dulce Chacon, 13
+*		Luis Gomez, 13
+*		Programa para contar diferentes tipos de palabras en un archivo de texto. 
+*		HOJA DE TRABAJO 8
+*
+*		Se uso codigo de referencia adjuntado con la hoja de trabajo
 */
 import java.io.*;
 
+
+/*principal: llama a los metodos de otras clases y realiza las operaciones*/
 class WordTypeCounter {
 	public static void main(String[] args) throws Exception
 	{
-		if(args.length > 1)
+		if(1 == 1)
 		{
 			// Declaraci�n e inicializaci�n de variables.
 			// el primer parametro indica el nombre del archivo con las definiciones de las palabras
-			File wordFile = new File(args[0]);
+			File wordFile = new File("C:\\Users\\Luis\\Documents\\UVG\\Cuarto Semestre\\Java\\HDT8A\\HDT8\\src\\files\\words.txt");
 			
 			// el segundo parametro indica el nombre del archivo que tiene el texto a analizar
-			File textFile = new File(args[1]);
+			File textFile = new File("C:\\Users\\Luis\\Documents\\UVG\\Cuarto Semestre\\Java\\HDT8A\\HDT8\\src\\files\\text.txt");
 			
 			// el tercer parametro sirve para seleccionar la implementacion que se usara para
 			// guardar el conjunto de palabras. Use el valor 1 para indicar que se empleara
@@ -28,7 +32,7 @@ class WordTypeCounter {
 			//  3 Splay Tree
 			//  4 Hash Table
 			//  5 TreeMap (de java collection framework)
-			int implementacion = Integer.parseInt(args[2]);
+			int implementacion = Integer.parseInt("3");
 			
 			BufferedReader wordreader;
 			BufferedReader textreader;
@@ -89,7 +93,7 @@ class WordTypeCounter {
 				String[] textParts;
 				Word currentword;
 				Word lookupword = new Word();
-				
+                                				
 				while(line!=null)
 				{
 					// Separar todas las palabras en la l�nea.
